@@ -62,6 +62,7 @@ a:hover {
 ul, li {
   list-style: none;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 img {
@@ -212,6 +213,7 @@ h1, h2, h3, h4, h5, h6 {
                 }
 
                 .burger__line {
+                  display: block;
                   position: absolute;
                   top: 8px;
                   right: -283px;
@@ -534,6 +536,11 @@ h1, h2, h3, h4, h5, h6 {
       transition: .30s;
     }
 
+    &:hover {
+      transform: scale(1.03);
+      transition: .3s;
+    }
+
 
 
   .fetured__card_link {
@@ -845,21 +852,28 @@ h1, h2, h3, h4, h5, h6 {
 
 // Catalog.html start
 // Breadcrumb start
+
+.bread__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .breadcrumb {
   background: #F8F3F4;
   padding: 60px 0;
   margin-bottom: 50px;
 
+  .news {
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
   .breadcrumb__inner {
-    display: flex;
-    justify-content: space-between;
-    .news {
-      font-size: 24px;
-      line-height: 29px;
-      color: #F16D7F;
-      text-transform: uppercase;
-      text-decoration: none;
-    }
+
+
     .news__filters {
 
       .news__filters {
@@ -1138,31 +1152,27 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .desk__btn {
-  margin: 50px 0 65px;
+  margin: 50px auto 65px;
   background: none;
   border: 1px solid #FF6A6A;
-  padding: 15px 56px 8px 23px;
+  padding: 6px 51px 10px 23px;
+  display: flex;
+  align-items: center;
 
   &:hover {
     background: #FF6A6A;
     transition: .30s;
   }
 
-  &:hover .desk__btn_inner .desk__pay_icon {
+  &:hover .desk__pay_icon {
     fill: #fff;
     transition: .30s;
   }
 
-  &:hover .desk__btn_inner .desk__btn_text {
+  &:hover .desk__btn_text {
     color: #fff;
     transition: .30s;
   }
-
-  .desk__btn_inner {
-    display: flex;
-    align-items: center;
-
-
 
     .desk__pay_icon {
       fill: #F26376;
@@ -1170,6 +1180,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .desk__btn_text {
+      display: block;
       font-family: Lato;
       font-style: normal;
       font-weight: normal;
@@ -1177,7 +1188,6 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 19px;
       color: #F26376;
     }
-  }
 }
 // collection description end
 
@@ -1229,7 +1239,8 @@ h1, h2, h3, h4, h5, h6 {
 
           .quantity {
             margin-left: 24px;
-            padding: 1px 17px;
+            padding: 1px 10px 1px 14px;
+            width: 43px;
             border: 1px solid #EAEAEA;
 
           }
@@ -1416,4 +1427,170 @@ h1, h2, h3, h4, h5, h6 {
 
 // shopping__carts end
 // Cart.html end
+
+// registration.html start
+.breadcrumb__reg {
+  margin-bottom: 64px;
+}
+
+.registration__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 96px;
+}
+
+.registration__inner {
+
+
+    
+    .name__title {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #222222;
+      margin-bottom: 20px;
+    }
+    .registration__input {
+      display: block;
+      padding: 13px 0 16px 17px;
+      border: 1px solid #A4A4A4;
+
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #B1B1B1;
+      opacity: .6;
+      width: 360px;
+
+      &:hover, &:active {
+        transition: .3s;
+        opacity: 1;
+      }
+    }
+
+    .first__name_input {
+      margin-bottom: 21px;
+    }
+
+    .last__name_input {
+      margin-bottom: 31px;
+    }
+
+    .radio__text {
+      margin-right: 20px;
+
+      .radio__btn {
+        margin-right: 10px;
+      }
+    }
+
+    .login__title {
+      margin-top: 33px;
+      margin-bottom: 20px;
+
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #222222;
+    }
+
+    .email_input {
+      margin-bottom: 21px;
+    }
+
+    .password_input {
+      margin-bottom: 15px;
+    }
+
+    .pass__manual {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #B1B1B1;
+      max-width: 360px;
+      margin-bottom: 39px;
+    }
+
+    .reg__btn {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+
+      padding: 16px 25px 17px 29px;
+      background: #F16D7F;
+
+      &:hover {
+        transition: .3s;
+        background: #d16271;
+      }
+
+      &:hover .reg__btn_icon {
+        transform: translateX(5px);
+        transition: .3s;
+
+      }
+
+      .reg__btn_icon {
+        margin-left: 20px;
+        fill: white;
+      }
+    }
+}
+
+.registration__benefits {
+  text-align: left;
+
+  .benefits__title {
+    text-transform: uppercase;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 22px;
+
+  }
+
+  .benefits__subtitle {
+    max-width: 652px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 21px;
+  }
+
+  .benefits__elements {
+
+    .benefits__item {
+      
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      margin-bottom: 16px;
+      padding-left: 46px;
+
+      background: url(../img/svg/check__icon.svg) no-repeat;
+      background-position: 0 8px;
+    }
+  }
+}
+// registration.html end
 
