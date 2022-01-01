@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   background: #222222;
-  padding: 18px 0;
+  padding: 18px 24px;
 }
 
 .header__wrapper {
@@ -318,7 +318,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper__offer {
-  padding: 65px 0 96px;
+  padding: 65px 15px 96px;
 }
 
 .wrapper__offer .offer__inner {
@@ -333,10 +333,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper__offer .offer__inner .for__element {
-  max-width: 360px;
-  width: 100%;
+  width: 30%;
   height: 260px;
-  margin-right: 30px;
   position: relative;
 }
 
@@ -1547,5 +1545,83 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 46px;
   background: url(../img/svg/check__icon.svg) no-repeat;
   background-position: 0 8px;
+}
+
+@media (max-width: 1140px) {
+  .fetured__cards_inner .fetured__card:nth-child(3n) {
+    margin-right: 30px;
+  }
+  .fetured__cards_inner .fetured__card:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .wrapper {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .intro .wrapper__intro {
+    background-size: 350px;
+    height: 338px;
+    background-position: 0 bottom;
+  }
+  .intro .wrapper__intro .intro__text .intro__title {
+    font-weight: 900;
+    font-size: 44px;
+  }
+  .intro .wrapper__intro .intro__text .intro__subtitle {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .wrapper__offer {
+    padding: 65px 15px 96px;
+  }
+  .wrapper__offer .offer__inner .for__element {
+    height: 167px;
+  }
+  .wrapper__offer .offer__inner .for__element_long {
+    height: 116px;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits .benefits__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .benefits .benefits__inner .benefits__item .benefits__item_pic {
+    margin-bottom: 28px;
+  }
+  .benefits .benefits__inner .benefits__item .benefits__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 48px;
+  }
+  .author {
+    background: url(../img/bottom__bg.jpg) no-repeat;
+    background-size: cover;
+  }
+  .author .author__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 97px 0 156px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
